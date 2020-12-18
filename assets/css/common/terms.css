@@ -1,0 +1,55 @@
+.terms-article > * + .c-heading {
+  margin-top: 5.5rem;
+}
+@media (min-width: 768px) {
+  .terms-article > * + .c-heading {
+    margin-top: 6.42857vw;
+  }
+}
+@media (min-width: 1400px) {
+  .terms-article > * + .c-heading {
+    margin-top: 90px;
+  }
+}
+
+.terms-article > .c-heading.-xs::after {
+  content: "";
+  display: block;
+  margin-bottom: calc((1 - 1.5) * 0.5em); 
+  width: 0;
+  height: 0;
+}
+
+.terms-article > .c-txt + .c-txt,
+.terms-article > .p-list + .c-txt,
+.terms-article > .c-txt + .p-list {
+  margin-top: 2em;
+}
+
+.terms-btn {
+  margin-top: 1em;
+}
+@media (min-width: 768px) {
+  .terms-btn {
+    margin-top: 2.85714vw;
+  }
+}
+@media (min-width: 1400px) {
+  .terms-btn {
+    margin-top: 40px;
+  }
+}
+
+.terms-privacymark {
+  margin: 6rem 0;
+}
+@media (min-width: 768px) {
+  .terms-privacymark {
+    margin: 2.85714vw 0;
+  }
+}
+@media (min-width: 1400px) {
+  .terms-privacymark {
+    margin: 40px 0;
+  }
+}

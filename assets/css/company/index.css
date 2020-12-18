@@ -1,0 +1,105 @@
+/* -----------------------------------------
+  NUMBER OF GA
+----------------------------------------- */
+.company-numberofga .c-heading > small {
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .company-numberofga .c-heading > small {
+    letter-spacing: 0.25em;
+  }
+}
+
+.company-cards.has-sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .company-cards.has-sm {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .company-cards.has-sm > .p-card + .p-card {
+    margin-left: 4.56026%;
+  }
+}
+@media (max-width: 767.98px) {
+  .company-cards.has-sm > .p-card:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .company-cards.has-sm > .p-card:nth-of-type(n + 3) {
+    margin-top: 4.5rem;
+  }
+}
+
+.company-card.-sm {
+  width: 12.8rem;
+}
+@media (min-width: 768px) {
+  .company-card.-sm {
+    width: 21.5798%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .company-card > .p-card_body {
+    padding: 1.7rem 0.5rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .company-card > .p-card_body {
+    padding-top: 2.85714vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .company-card > .p-card_body {
+    padding-top: 40px;
+  }
+}
+
+/* -----------------------------------------
+  ACCESS
+----------------------------------------- */
+.company-access .p-card_tit {
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .company-access .p-card_tit {
+    line-height: 1;
+  }
+  .company-access .p-card_tit::before {
+    content: "";
+    display: block;
+    margin-top: calc((1 - 1) * 0.5em); 
+    width: 0;
+    height: 0;
+  }
+  .company-access .p-card_tit::after {
+    content: "";
+    display: block;
+    margin-bottom: calc((1 - 1) * 0.5em); 
+    width: 0;
+    height: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .company-access .p-card_tit small {
+    margin-top: 0.9rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .company-access .p-card_tit small {
+    font-size: 1.2rem;
+  }
+}

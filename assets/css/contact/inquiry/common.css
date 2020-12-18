@@ -1,0 +1,223 @@
+.contactform-jumbotron {
+  margin-bottom: 2.6rem;
+}
+@media (min-width: 768px) {
+  .contactform-jumbotron {
+    margin-bottom: 3.57143vw;
+  }
+}
+@media (min-width: 1400px) {
+  .contactform-jumbotron {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contactform-headline {
+    letter-spacing: 0.06em !important; 
+    font-size: 2.7rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactform-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 59.57143vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contactform-container {
+    width: 834px; 
+    max-width: 834px;
+  }
+}
+
+.contactform-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  counter-reset: section; 
+
+  -webkit-box-align: center; 
+
+      -ms-flex-align: center; 
+
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 768px) {
+  .contactform-progress {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media (max-width: 767.98px) {
+  [lang="en"] .contactform-progress {
+    overflow-x: auto; 
+
+    -webkit-box-pack: start; 
+
+        -ms-flex-pack: start; 
+
+            justify-content: flex-start;
+  }
+}
+
+.contactform-progress_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  counter-increment: section; 
+  letter-spacing: 0.14em;
+  word-break: keep-all;
+  font-size: 1.2rem;
+
+  -webkit-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+}
+@media (max-width: 767.98px) {
+  [lang="en"] .contactform-progress_item {
+    white-space: nowrap;
+  }
+}
+@media (min-width: 768px) {
+  .contactform-progress_item {
+    letter-spacing: 0.16em;
+    letter-spacing: 0.1em; 
+    font-size: 1.6rem;
+  }
+}
+.contactform-progress_item[aria-current="step"] {
+  color: #14abae; 
+  font-weight: bold;
+}
+.contactform-progress_item + .contactform-progress_item::before {
+  content: "";
+  display: inline-block;
+  margin: 0 1.4rem;
+  border: 1px solid #dddfe3; 
+  width: 2.2rem;
+}
+@media (min-width: 768px) {
+  .contactform-progress_item + .contactform-progress_item::before {
+    margin: 0 2.14286vw; 
+    width: 2.85714vw;
+  }
+}
+@media (min-width: 1400px) {
+  .contactform-progress_item + .contactform-progress_item::before {
+    margin: 0 30px; 
+    width: 40px;
+  }
+}
+
+.contactform-progressnumber {
+  display: inline-block;
+  margin-right: 0.6rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  background: #f4f6f9; 
+  text-align: center;
+  text-indent: 0.14em;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+}
+.contactform-progressnumber::before {
+  content: "0" counter(section);
+}
+@media (min-width: 768px) {
+  .contactform-progressnumber {
+    margin-right: 1.07143vw;
+    width: 2.71429vw;
+    height: 2.71429vw;
+    text-indent: 0.16em; 
+    font-size: 1.6rem;
+    line-height: 2.71429vw;
+  }
+}
+@media (min-width: 1400px) {
+  .contactform-progressnumber {
+    margin-right: 15px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+  }
+}
+[aria-current="step"] .contactform-progressnumber {
+  background: #14abae; 
+  color: #f4f6f9;
+}
+
+.contactform-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.1rem;
+  vertical-align: middle; 
+  letter-spacing: 0.16em;
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  -webkit-box-align: center;
+
+      -ms-flex-align: center;
+
+          align-items: center;
+}
+@media (min-width: 768px) {
+  .contactform-label {
+    margin-bottom: 1.28571vw;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  .contactform-label {
+    margin-bottom: 18px;
+  }
+}
+
+.contactform-required {
+  margin-left: 1rem;
+  vertical-align: middle; 
+  color: #ad1000;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .contactform-required {
+    margin-left: 0.42857vw;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .contactform-required {
+    margin-left: 6px;
+  }
+}
+
+.contactform-submitcontainer {
+  padding: 6rem 0;
+  width: 100%;
+  background: #f4f6f9;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contactform-submitcontainer {
+    padding: 4.57143vw 0;
+  }
+}
+@media (min-width: 1400px) {
+  .contactform-submitcontainer {
+    padding: 64px 0;
+  }
+}

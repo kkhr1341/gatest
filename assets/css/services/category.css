@@ -1,0 +1,38 @@
+.servicecategory-chart {
+  margin-top: 7.8rem;
+  margin-bottom: 7.8rem;
+}
+@media (max-width: 767.98px) {
+  .servicecategory-chart {
+    overflow: auto;
+    padding-bottom: 1.2rem;
+  }
+  .servicecategory-chart::-webkit-scrollbar {
+    height: 0.7rem;
+  }
+  .servicecategory-chart::-webkit-scrollbar-track {
+    background-color: #f4f6f9;
+  }
+  .servicecategory-chart::-webkit-scrollbar-thumb {
+    background-color: #14abae;
+  }
+}
+@media (min-width: 768px) {
+  .servicecategory-chart {
+    margin-top: 7.42857vw;
+    margin-bottom: 7.42857vw;
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .servicecategory-chart {
+    margin-top: 104px;
+    margin-bottom: 104px;
+  }
+}
+@media (max-width: 767.98px) {
+  .servicecategory-chart img {
+    width: 175.42857vw;
+    max-width: 175.42857vw;
+  }
+}

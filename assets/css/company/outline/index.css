@@ -1,0 +1,140 @@
+.page-outline .c-headline.-lg {
+  margin-bottom: 3.6rem;
+}
+@media (min-width: 768px) {
+  .page-outline .c-headline.-lg {
+    margin-bottom: 6.28571vw;
+  }
+}
+@media (min-width: 1400px) {
+  .page-outline .c-headline.-lg {
+    margin-bottom: 88px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-outline .p-datalist_col + .p-datalist_col {
+    padding-left: 1.5em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-outline .p-datalist_row {
+    display: block;
+  }
+}
+
+.page-outline .p-datalist_row + .p-datalist_heading {
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  .page-outline .p-datalist_row + .p-datalist_heading {
+    padding-top: 2vw;
+  }
+}
+@media (min-width: 1400px) {
+  .page-outline .p-datalist_row + .p-datalist_heading {
+    padding-top: 28px;
+  }
+}
+
+.outline-history .p-datalist_col:first-child {
+  min-width: 3.2em;
+}
+
+.outline-history .p-datalist_col + .p-datalist_col {
+  padding-left: 0.3rem;
+}
+@media (min-width: 768px) {
+  .outline-history .p-datalist_col + .p-datalist_col {
+    padding-left: 0rem;
+  }
+}
+
+.outline-txtbtn {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .outline-txtbtn {
+    margin-top: 1vw;
+  }
+}
+@media (min-width: 1400px) {
+  .outline-txtbtn {
+    margin-top: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .outline-datalist_item .p-datalist_heading {
+    padding-bottom: 0.21429vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .outline-datalist_item .p-datalist_heading {
+    padding-bottom: 3px;
+  }
+}
+
+.outline-cta {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .outline-cta_container {
+    padding: 2vw 0 4.28571vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .outline-cta_container {
+    padding: 28px 0 60px;
+  }
+}
+
+.outline-cta_txt {
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.12em;
+}
+@media (min-width: 768px) {
+  .outline-cta_txt {
+    margin-bottom: 0.92857vw;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .outline-cta_txt {
+    margin-bottom: 13px;
+  }
+}
+
+.outline-cta_btn {
+  width: 100%;
+  letter-spacing: 0.08em; 
+  font-size: 2.1rem;
+}
+@media (min-width: 768px) {
+  .outline-cta_btn {
+    width: 25.42857vw;
+    max-width: 356px;
+    font-size: 4rem;
+  }
+}
+
+.outline-cta_icon {
+  position: absolute;
+  right: 0.8rem;
+}
+@media (min-width: 768px) {
+  .outline-cta_icon {
+    right: 1.14286vw;
+  }
+}
+@media (min-width: 1400px) {
+  .outline-cta_icon {
+    right: 16px;
+  }
+}

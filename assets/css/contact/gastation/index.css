@@ -1,0 +1,167 @@
+.gastation-headline_level small {
+  letter-spacing: 0.1em; 
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+  .gastation-headline_level small {
+    margin-left: 1.57143vw;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  .gastation-headline_level small {
+    margin-left: 22px;
+  }
+}
+
+.gastation-cards_txt {
+  margin-top: 3.8rem;
+}
+@media (min-width: 768px) {
+  .gastation-cards_txt {
+    margin-top: 5vw;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .gastation-cards_txt {
+    margin-top: 70px;
+  }
+}
+
+.gastation-attention_txt {
+  font-size: 1.4rem;
+  line-height: 2;
+}
+@media (min-width: 768px) {
+  .gastation-attention_txt {
+    font-size: 1.6rem;
+    line-height: 2.13;
+  }
+}
+
+.gastation-attention_txt + .gastation-attention_txt {
+  margin-top: 3.2rem;
+}
+@media (min-width: 768px) {
+  .gastation-attention_txt + .gastation-attention_txt {
+    margin-top: 2.5vw;
+  }
+}
+@media (min-width: 1400px) {
+  .gastation-attention_txt + .gastation-attention_txt {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gastation-colomun {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .gastation-colomun_block {
+    width: 41vw;
+    max-width: 574px;
+
+    -webkit-box-flex: 0;
+
+        -ms-flex: 0 0 41vw;
+
+            flex: 0 0 41vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gastation-colomun_block + .gastation-colomun_block {
+    margin-top: 5.3rem;
+  }
+}
+
+.gastation-phonenumber {
+  font-family: brandon-grotesque, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .gastation-phonenumber {
+    font-size: 2.4rem;
+  }
+}
+
+.gastation-inquiry {
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .gastation-inquiry {
+    margin-top: 5.71429vw;
+  }
+}
+@media (min-width: 1400px) {
+  .gastation-inquiry {
+    margin-top: 80px;
+  }
+}
+
+.gastation-inquirycontainer {
+  padding: 6rem 2rem;
+  width: 100%;
+  background: #f4f6f9;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .gastation-inquirycontainer {
+    padding: 4.57143vw 0;
+  }
+}
+@media (min-width: 1400px) {
+  .gastation-inquirycontainer {
+    padding: 64px 0;
+  }
+}
+.gastation-inquirycontainer .c-txt {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .gastation-inquirycontainer .c-txt {
+    text-align: center; 
+    font-size: 1.4rem;
+  }
+}
+
+.gastation-heading.-xs {
+  margin-bottom: 1.4rem;
+}
+@media (min-width: 768px) {
+  .gastation-heading.-xs {
+    text-align: center; 
+    font-size: 2rem;
+  }
+}
+
+.gastation-inquiry_btn.-contained {
+  margin-bottom: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .gastation-inquiry_btn.-contained {
+    margin-bottom: 1.57143vw;
+    font-size: 3.4rem;
+  }
+}
+@media (min-width: 1400px) {
+  .gastation-inquiry_btn.-contained {
+    margin-bottom: 22px;
+  }
+}

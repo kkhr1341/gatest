@@ -1656,9 +1656,6 @@ select::-ms-expand {
 .p-carousel_slide:first-child {
   position: relative;
 }
-.p-carousel_slide img {
-  visibility: hidden;
-}
 .p-carousel_mask {
   position: relative;
   left: 0;
@@ -1722,7 +1719,6 @@ select::-ms-expand {
   left: 10rem;
 }
 .p-carousel_img img {
-  visibility: hidden;
   width: 100%;
 }
 .p-carousel_img picture {
@@ -5284,6 +5280,7 @@ input[type="checkbox"]:checked ~ .p-checkbox_icon::before {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .p-cards.has-md > .p-card {
     width: 28.99023%;

@@ -1,512 +1,553 @@
 <!DOCTYPE html>
 <html lang="ja" wovn-isLoading="">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script src="http://j.wovn.io/1" async="true" data-wovnio="key=yTIi80&amp;backend=true&amp;currentLang=ja&amp;defaultLang=ja&amp;urlPattern=path&amp;version=0.0.1&amp;backendVersion=WOVN.php_0.1.20&amp;langParamName=wovn" data-wovnio-cache-time="202012160111+0000"></script>
-
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Google Tag Manager -->
-
     <!-- End Google Tag Manager -->
-
     <!-- meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>タイトル</title>
-    <meta name="description" content="webページ説明">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-
+    <meta name="description" content="webページ説明" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
     <!-- og -->
-    <meta property="og:title" content="タイトル">
-    <meta property="og:description" content="webページ説明">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://www.example.co.jp" data-wovn-src:-original-content="https://www.example.co.jp">
-    <meta property="og:image" content="https://www.example.co.jp/og.png">
-
+    <meta property="og:title" content="タイトル" />
+    <meta property="og:description" content="webページ説明" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.example.co.jp" data-wovn-src:-original-content="https://www.example.co.jp" />
+    <meta property="og:image" content="https://www.example.co.jp/og.png" />
     <!-- twitter card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="タイトル">
-    <meta name="twitter:description" content="webページ説明">
-    <meta name="twitter:url" content="https://www.example.co.jp">
-    <meta name="twitter:image" content="https://www.example.co.jp/twitter_card.png">
-
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="タイトル" />
+    <meta name="twitter:description" content="webページ説明" />
+    <meta name="twitter:url" content="https://www.example.co.jp" />
+    <meta name="twitter:image" content="https://www.example.co.jp/twitter_card.png" />
     <!-- icon -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="canonical" href="index.html">
-
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="canonical" href="" />
     <!-- Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/zbr7vmo.css">
-
+    <link rel="stylesheet" href="https://use.typekit.net/zbr7vmo.css" />
     <!-- stylesheet -->
-    <link href="assets/js/vendor/slick.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="assets/js/vendor/slick.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
     <style type="text/css" media="screen">
-        .sitetop-loader {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            position: fixed;
-            z-index: 1006;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            -webkit-transition: opacity 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1), z-index 0s 0.8s;
-            transition: opacity 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1), z-index 0s 0.8s;
-            background: white;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-        
+      .sitetop-loader {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: fixed;
+        z-index: 1006;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: opacity 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1), z-index 0s 0.8s;
+        transition: opacity 0.6s 0.2s cubic-bezier(0.19, 1, 0.22, 1), z-index 0s 0.8s;
+        background: white;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      .sitetop-loader::before {
+        content: "";
+        display: block;
+        width: 15.625vw;
+        height: 0.3125vw;
+        -webkit-transition: opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        transition: opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        -webkit-animation: loader 1s cubic-bezier(0.19, 1, 0.22, 1) forwards infinite;
+        animation: loader 1s cubic-bezier(0.19, 1, 0.22, 1) forwards infinite;
+        background: #14abae;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      @media (min-width: 768px) {
         .sitetop-loader::before {
-            content: "";
-            display: block;
-            width: 15.625vw;
-            height: 0.3125vw;
-            -webkit-transition: opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1);
-            transition: opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1);
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
-            -webkit-animation: loader 1s cubic-bezier(0.19, 1, 0.22, 1) forwards infinite;
-            animation: loader 1s cubic-bezier(0.19, 1, 0.22, 1) forwards infinite;
-            background: #14abae;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+          width: 5vw;
+          height: 0.14286vw;
         }
-        
-        @media (min-width: 768px) {
-            .sitetop-loader::before {
-                width: 5vw;
-                height: 0.14286vw;
-            }
+      }
+      @media (min-width: 1400px) {
+        .sitetop-loader::before {
+          width: 70px;
+          height: 2px;
         }
-        
-        @media (min-width: 1400px) {
-            .sitetop-loader::before {
-                width: 70px;
-                height: 2px;
-            }
+      }
+      body.-loaded .sitetop-loader {
+        opacity: 0;
+        z-index: -1;
+      }
+      body.-loaded .sitetop-loader::before {
+        opacity: 0;
+      }
+      @-webkit-keyframes loader {
+        0% {
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
         }
-        
-        body.-loaded .sitetop-loader {
-            opacity: 0;
-            z-index: -1;
+        25% {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
         }
-        
-        body.-loaded .sitetop-loader::before {
-            opacity: 0;
+        50% {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
         }
-        
-        @-webkit-keyframes loader {
-            0% {
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 0% 50%;
-                transform-origin: 0% 50%;
-            }
-            25% {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transform-origin: 0% 50%;
-                transform-origin: 0% 50%;
-            }
-            50% {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-            }
-            75% {
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-            }
-            100% {
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-            }
+        75% {
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
         }
-        
-        @keyframes loader {
-            0% {
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 0% 50%;
-                transform-origin: 0% 50%;
-            }
-            25% {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transform-origin: 0% 50%;
-                transform-origin: 0% 50%;
-            }
-            50% {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-            }
-            75% {
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-            }
-            100% {
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 100% 50%;
-                transform-origin: 100% 50%;
-            }
+        100% {
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
         }
+      }
+      @keyframes loader {
+        0% {
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+        }
+        25% {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+        }
+        50% {
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+        }
+        75% {
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+        }
+        100% {
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+        }
+      }
     </style>
     <script>
-        document.createElement("picture");
+      document.createElement("picture");
     </script>
     <script src="assets/js/vendor/picturefill.min.js" async=""></script>
-    <link rel="dns-prefetch" href="http://s.w.org">
-</head>
-
-<body id="pagetop">
+  </head>
+  <body id="pagetop">
     <!-- Google Tag Manager (noscript) -->
-
     <!-- End Google Tag Manager (noscript) -->
     <div data-include="/includes/drawer.html"></div>
     <div data-include="/includes/sitemap.html"></div>
     <div data-include="/includes/header.html"></div>
     <main class="base-main page-sitetop">
-        <div class="sitetop-loader"></div>
-        <div class="sitetop-caslide" id="sitetop-caslide">
-            <div class="sitetop-caslide_container">
-                <div class="sitetop-caslide_content">
-                    <div class="sitetop-caslide_txt -fixed">
-                        <div class="sitetop-caslide_txtmask js-carouselmask">
-                            <div class="sitetop-caslide_txtmaskimg js-carouselmaskimg">
-
-
-                                <h1 class="sitetop-caslide_title">
-                                    <span>h1大見出し</span>
-                                </h1>
-
-                                <!-- トップテキスト -->
-                                <p class="sitetop-caslide_lead"><span>キャッチコピー<br>キャッチコピー</span></p>
-                                <!-- ここまで -->
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sitetop-caslide_txt">
-                        <div class="sitetop-caslide_txtmask js-carouselmask">
-                            <div class="sitetop-caslide_txtmaskimg js-carouselmaskimg">
-
-
-                                <!-- 見出しテキスト -->
-                                <h2 class="sitetop-caslide_title"><span>h2見出し</span></h2>
-                                <p class="sitetop-caslide_lead"><span>見出しテキスト<br>見出しテキスト</span></p>
-
-                                <!-- 見出し詳細へ -->
-                                <a class="sitetop-caslide_btn p-btn -contained" href="/">
-                                    <span class="p-btn_label">READ MORE</span>
-                                    <svg class="p-btn_icon c-icon -arrow"><use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use></svg>
-                                </a>
-
-
-                            </div>
-                        </div>
-                    </div>
+      <div class="sitetop-loader"></div>
+      <div class="sitetop-caslide" id="sitetop-caslide">
+        <div class="sitetop-caslide_container">
+          <div class="sitetop-caslide_content">
+            <div class="sitetop-caslide_txt -fixed">
+              <div class="sitetop-caslide_txtmask js-carouselmask">
+                <div class="sitetop-caslide_txtmaskimg js-carouselmaskimg">
+                  <h1 class="sitetop-caslide_title">
+                    <span> h1大見出し </span>
+                  </h1>
+                  <!-- トップテキスト -->
+                  <p class="sitetop-caslide_lead">
+                    <span>
+                      キャッチコピー
+                      <br />
+                      キャッチコピー
+                    </span>
+                  </p>
+                  <!-- ここまで -->
                 </div>
-                <div class="sitetop-caslide_figure">
-                    <div class="sitetop-caslide_img">
-                        <picture>
-
-
-                            <!-- トップ画像 -->
-                            <!--[if IE 9]><video style="display: none;"><![endif]-->
-                            <source srcset="/assets/img/uploads/top_01-1.jpg" media="(min-width: 768px)"></source>
-                            <!--[if IE 9]></video><![endif]-->
-                            <img src="assets/img/uploads/top_01_sp.jpg" alt="">
-                            <!-- ここまで -->
-
-
-                        </picture>
-                    </div>
-                    <div class="sitetop-caslide_img">
-                        <picture>
-
-
-                            <!-- 見出し画像 -->
-                            <!--[if IE 9]><video style="display: none;"><![endif]-->
-                            <source srcset="/assets/img/uploads/top_02-1.jpg" media="(min-width: 768px)"></source>
-                            <!--[if IE 9]></video><![endif]-->
-                            <img src="assets/img/uploads/top_02_sp.jpg" alt="">
-                            <!-- ここまで -->
-
-
-                        </picture>
-                    </div>
-                    <div class="sitetop-caslide_canvas" id="sitetop-caslide_canvas"></div>
-                    <div class="sitetop-caslide_progressbar" id="sitetop-caslide_progressbar"></div>
-                </div>
+              </div>
             </div>
-            <div class="sitetop-caslide_nav" id="sitetop-caslide_nav">
-                <div class="sitetop-caslide_navmask">
-                    <div class="sitetop-caslide_navinner">
-                        <div class="sitetop-next">
-                            <div class="sitetop-next_bg"></div>
-                            <div class="sitetop-next_thumbmask js-carouselmask">
-                                <div class="sitetop-next_thumbmaskimg js-carouselmaskimg">
-                                    <div class="sitetop-next_thumb -active">
-                                        <div class="sitetop-next_thumbinner">
-
-
-                                            <!-- nextボタン -->
-                                            <img src="assets/img/uploads/top_02-1-180x124.jpg" alt="">
-                                            <span class="sitetop-next_txt">NEXT<br><strong>見出し</strong></span>
-                                            <!-- ここまで -->
-
-
-                                        </div>
-                                    </div>
-                                    <div class="sitetop-next_thumb">
-                                        <div class="sitetop-next_thumbinner">
-
-
-                                            <!-- nextボタン -->
-                                            <img src="assets/img/uploads/top_01-1-180x124.jpg" alt="">
-                                            <span class="sitetop-next_txt">NEXT<br><strong>大見出し</strong></span>
-                                            <!-- ここまで -->
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sitetop-caslide_navbtn p-btn -block -md"><svg class="p-carousel_icon p-btn_icon c-icon"><use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use></svg></div>
+            <div class="sitetop-caslide_txt">
+              <div class="sitetop-caslide_txtmask js-carouselmask">
+                <div class="sitetop-caslide_txtmaskimg js-carouselmaskimg">
+                  <!-- 見出しテキスト -->
+                  <h2 class="sitetop-caslide_title">
+                    <span> h2見出し </span>
+                  </h2>
+                  <p class="sitetop-caslide_lead">
+                    <span>
+                      見出しテキスト
+                      <br />
+                      見出しテキスト
+                    </span>
+                  </p>
+                  <!-- 見出し詳細へ -->
+                  <a class="sitetop-caslide_btn p-btn -contained" href="/">
+                    <span class="p-btn_label"> READ MORE </span>
+                    <svg class="p-btn_icon c-icon -arrow">
+                      <use xlink:href="assets/img/common/sprite.svg#arrow_right"></use>
+                    </svg>
+                  </a>
                 </div>
-                <div class="sitetop-caslide_pagination" id="sitetop-caslide_pagination">
-                    <div class="sitetop-caslide_paginationinner"><em>00</em><small>00</small></div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="sitetop-caslide_figure">
+            <div class="sitetop-caslide_img">
+              <picture>
+                <!-- トップ画像 -->
+                <!--[if IE 9]>
+
+<video style="display: none;">
+
+<![endif]-->
+                <source srcset="/assets/img/uploads/top_01-1.jpg" media="(min-width: 768px)" />
+                <!--[if IE 9]>
+
+</video>
+
+<![endif]-->
+                <img src="assets/img/uploads/top_01_sp.jpg" alt="" />
+                <!-- ここまで -->
+              </picture>
+            </div>
+            <div class="sitetop-caslide_img">
+              <picture>
+                <!-- 見出し画像 -->
+                <!--[if IE 9]>
+
+<video style="display: none;">
+
+<![endif]-->
+                <source srcset="/assets/img/uploads/top_02-1.jpg" media="(min-width: 768px)" />
+                <!--[if IE 9]>
+
+</video>
+
+<![endif]-->
+                <img src="assets/img/uploads/top_02_sp.jpg" alt="" />
+                <!-- ここまで -->
+              </picture>
+            </div>
+            <div class="sitetop-caslide_canvas" id="sitetop-caslide_canvas"></div>
+            <div class="sitetop-caslide_progressbar" id="sitetop-caslide_progressbar"></div>
+          </div>
         </div>
-        <section class="sitetop-aboutus base-section -curve">
-            <div class="base-container">
-
-                <!-- about us h2 -->
-                <h2 class="sitetop-heading">ABOUT US<small><span class="u-latinfont">会社</span>について</small></h2>
-
-
-                <ul>
-                    <li class="sitetop-card -xl -services">
-                        <a href="services/index.html">
-                            <div class="p-card_header">
-                                <div class="c-thumbnail">
-                                    <div class="anime-panel -about">
-                                        <div class="anime-panel_container">
-                                            <div class="anime-panel_img">
-
-                                                <!-- サービス画像 -->
-                                                <picture>
-                                                    <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                                    <source srcset="/assets/img/index_cardthumb_01_lg.jpg" media="(min-width: 768px)"></source>
-                                                    <!--[if IE 9]></video><![endif]-->
-                                                    <img src="assets/img/index_cardthumb_01_sm.jpg" alt="">
-                                                </picture>
-                                                <!-- ここまで -->
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-card_body">
-
-
-                                <div class="p-card_head">
-                                    <div class="sitetop-card_tit p-card_tit">
-                                        SERVICES<small>事業内容</small>
-                                    </div>
-                                </div>
-                                <div class="p-card_txt">事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明</div>
-                                <div class="sitetop-btn p-card_btn p-btn -contained">
-                                    <span class="p-btn_label">READ MORE</span>
-                                    <svg class="p-btn_icon c-icon -arrow"><use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use></svg>
-                                </div>
-
-
-                            </div>
-                        </a>
-                    </li>
-                    <li class="sitetop-card -xl -company">
-                        <a href="company/index.html">
-                            <div class="p-card_header">
-                                <div class="c-thumbnail">
-                                    <div class="anime-panel -about">
-                                        <div class="anime-panel_container">
-                                            <div class="anime-panel_img">
-
-
-                                                <picture>
-                                                    <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                                    <source srcset="/assets/img/index_cardthumb_02_lg.jpg" media="(min-width: 768px)"></source>
-                                                    <!--[if IE 9]></video><![endif]-->
-                                                    <img src="assets/img/index_cardthumb_02_sm.jpg" alt="">
-                                                </picture>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-card_body">
-                                <div class="p-card_head">
-
-
-                                    <div class="sitetop-card_tit p-card_tit">
-                                        COMPANY<small>会社情報</small>
-                                    </div>
-                                </div>
-                                <div class="p-card_txt">
-                                    会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明
-                                </div>
-                                <div class="sitetop-btn p-card_btn p-btn -contained"><span class="p-btn_label">READ MORE</span>
-                                    <svg class="p-btn_icon c-icon -arrow"><use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use></svg>
-                                </div>
-
-
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="sitetop-cards">
-                    <li class="sitetop-card -message">
-                        <a href="company/philosophy/index.html">
-                            <div class="p-card_header">
-                                <div class="c-thumbnail">
-                                    <div class="anime-panel -message">
-                                        <div class="anime-panel_container">
-                                            <div class="anime-panel_img">
-                                                <picture>
-                                                    <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                                    <source srcset="/assets/img/index_cardthumb_03_lg.jpg" media="(min-width: 768px)">
-                                                    </source>
-                                                    <!--[if IE 9]></video><![endif]--><img src="assets/img/index_cardthumb_03_sm.jpg" alt="">
-                                                </picture>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-card_body">
-                                <div class="p-card_head">
-                                    <div class="sitetop-card_tit p-card_tit">PHILOSOPHY<small>経営理念</small></div>
-                                </div>
-                                <div class="p-card_btn p-btn -contained">
-                                    <span class="p-btn_label">READ MORE</span>
-                                    <svg class="p-btn_icon c-icon -arrow"><use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use></svg>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="sitetop-card -philosophy">
-                        <a href="company/outline/index.html">
-                            <div class="p-card_header">
-                                <div class="c-thumbnail">
-                                    <div class="anime-panel -philosophy">
-                                        <div class="anime-panel_container">
-                                            <div class="anime-panel_img">
-                                                <picture>
-                                                    <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                                    <source srcset="/assets/img/index_cardthumb_04_lg.jpg" media="(min-width: 768px)"></source>
-                                                    <!--[if IE 9]></video><![endif]-->
-                                                    <img src="assets/img/index_cardthumb_04_sm.jpg" alt="">
-                                                </picture>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-card_body">
-
-
-                                <div class="p-card_head">
-                                    <div class="sitetop-card_tit p-card_tit">OUTLINE<small>会社概要</small></div>
-                                </div>
-                                <div class="p-card_btn p-btn -contained">
-                                    <span class="p-btn_label">READ MORE</span>
-                                    <svg class="p-btn_icon c-icon -arrow"><use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use></svg>
-                                </div>
-
-
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+        <div class="sitetop-caslide_nav" id="sitetop-caslide_nav">
+          <div class="sitetop-caslide_navmask">
+            <div class="sitetop-caslide_navinner">
+              <div class="sitetop-next">
+                <div class="sitetop-next_bg"></div>
+                <div class="sitetop-next_thumbmask js-carouselmask">
+                  <div class="sitetop-next_thumbmaskimg js-carouselmaskimg">
+                    <div class="sitetop-next_thumb -active">
+                      <div class="sitetop-next_thumbinner">
+                        <!-- nextボタン -->
+                        <img src="assets/img/uploads/top_02-1-180x124.jpg" alt="" />
+                        <span class="sitetop-next_txt">
+                          NEXT
+                          <br />
+                          <strong> 見出し </strong>
+                        </span>
+                        <!-- ここまで -->
+                      </div>
+                    </div>
+                    <div class="sitetop-next_thumb">
+                      <div class="sitetop-next_thumbinner">
+                        <!-- nextボタン -->
+                        <img src="assets/img/uploads/top_01-1-180x124.jpg" alt="" />
+                        <span class="sitetop-next_txt">
+                          NEXT
+                          <br />
+                          <strong> 大見出し </strong>
+                        </span>
+                        <!-- ここまで -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="sitetop-caslide_navbtn p-btn -block -md">
+              <svg class="p-carousel_icon p-btn_icon c-icon">
+                <use xlink:href="assets/img/common/sprite.svg#arrow_right"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="sitetop-caslide_pagination" id="sitetop-caslide_pagination">
+            <div class="sitetop-caslide_paginationinner">
+              <em> 00 </em>
+              <small> 00 </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="sitetop-aboutus base-section -curve">
+        <div class="base-container">
+          <!-- about us h2 -->
+          <h2 class="sitetop-heading">
+            ABOUT US
+            <small>
+              <span class="u-latinfont"> 会社 </span>
+              について
+            </small>
+          </h2>
+          <ul>
+            <li class="sitetop-card -xl -services">
+              <a href="services/">
+                <div class="p-card_header">
+                  <div class="c-thumbnail">
+                    <div class="anime-panel -about">
+                      <div class="anime-panel_container">
+                        <div class="anime-panel_img">
+                          <!-- サービス画像 -->
+                          <picture>
+                            <!--[if IE 9]>
+
+<video style="display: none;">
+
+<![endif]-->
+                            <source srcset="/assets/img/index_cardthumb_01_lg.jpg" media="(min-width: 768px)" />
+                            <!--[if IE 9]>
+
+</video>
+
+<![endif]-->
+                            <img src="assets/img/index_cardthumb_01_sm.jpg" alt="" />
+                          </picture>
+                          <!-- ここまで -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-card_body">
+                  <div class="p-card_head">
+                    <div class="sitetop-card_tit p-card_tit">
+                      SERVICES
+                      <small> 事業内容 </small>
+                    </div>
+                  </div>
+                  <div class="p-card_txt">事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明、事業内容の簡易説明</div>
+                  <div class="sitetop-btn p-card_btn p-btn -contained">
+                    <span class="p-btn_label"> READ MORE </span>
+                    <svg class="p-btn_icon c-icon -arrow">
+                      <use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="sitetop-card -xl -company">
+              <a href="company/">
+                <div class="p-card_header">
+                  <div class="c-thumbnail">
+                    <div class="anime-panel -about">
+                      <div class="anime-panel_container">
+                        <div class="anime-panel_img">
+                          <picture>
+                            <!--[if IE 9]>
+
+<video style="display: none;">
+
+<![endif]-->
+                            <source srcset="/assets/img/index_cardthumb_02_lg.jpg" media="(min-width: 768px)" />
+                            <!--[if IE 9]>
+
+</video>
+
+<![endif]-->
+                            <img src="assets/img/index_cardthumb_02_sm.jpg" alt="" />
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-card_body">
+                  <div class="p-card_head">
+                    <div class="sitetop-card_tit p-card_tit">
+                      COMPANY
+                      <small> 会社情報 </small>
+                    </div>
+                  </div>
+                  <div class="p-card_txt">会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明、会社情報の簡易説明</div>
+                  <div class="sitetop-btn p-card_btn p-btn -contained">
+                    <span class="p-btn_label"> READ MORE </span>
+                    <svg class="p-btn_icon c-icon -arrow">
+                      <use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="sitetop-cards">
+            <li class="sitetop-card -message">
+              <a href="company/#philosophy">
+                <div class="p-card_header">
+                  <div class="c-thumbnail">
+                    <div class="anime-panel -message">
+                      <div class="anime-panel_container">
+                        <div class="anime-panel_img">
+                          <picture>
+                            <!--[if IE 9]>
+
+<video style="display: none;">
+
+<![endif]-->
+                            <source srcset="/assets/img/index_cardthumb_03_lg.jpg" media="(min-width: 768px)" />
+                            <!--[if IE 9]>
+
+</video>
+
+<![endif]-->
+                            <img src="assets/img/index_cardthumb_03_sm.jpg" alt="" />
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-card_body">
+                  <div class="p-card_head">
+                    <div class="sitetop-card_tit p-card_tit">
+                      PHILOSOPHY
+                      <small> 経営理念 </small>
+                    </div>
+                  </div>
+                  <div class="p-card_btn p-btn -contained">
+                    <span class="p-btn_label"> READ MORE </span>
+                    <svg class="p-btn_icon c-icon -arrow">
+                      <use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="sitetop-card -philosophy">
+              <a href="company/#outline">
+                <div class="p-card_header">
+                  <div class="c-thumbnail">
+                    <div class="anime-panel -philosophy">
+                      <div class="anime-panel_container">
+                        <div class="anime-panel_img">
+                          <picture>
+                            <!--[if IE 9]>
+
+<video style="display: none;">
+
+<![endif]-->
+                            <source srcset="/assets/img/index_cardthumb_04_lg.jpg" media="(min-width: 768px)" />
+                            <!--[if IE 9]>
+
+</video>
+
+<![endif]-->
+                            <img src="assets/img/index_cardthumb_04_sm.jpg" alt="" />
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-card_body">
+                  <div class="p-card_head">
+                    <div class="sitetop-card_tit p-card_tit">
+                      OUTLINE
+                      <small> 会社概要 </small>
+                    </div>
+                  </div>
+                  <div class="p-card_btn p-btn -contained">
+                    <span class="p-btn_label"> READ MORE </span>
+                    <svg class="p-btn_icon c-icon -arrow">
+                      <use xlink:href="assets/img/common/sprite.svg#arrow_right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <div class="siteinfo">
-        <p class="siteinfo_logo">
-            <a class="siteinfo_logolink anime-fade js-touchhover" href="index.html"><img class="siteinfo_logoimage" src="assets/img/common/1_Primary_logo_on_transparent_88x63.png" alt="GA technologies"></a>
-        </p>
+      <p class="siteinfo_logo">
+        <a class="siteinfo_logolink anime-fade js-touchhover" href="">
+          <img class="siteinfo_logoimage" src="assets/img/common/1_Primary_logo_on_transparent_88x63.png" alt="GA technologies" />
+        </a>
+      </p>
+      <div class="siteinfo_box">
+        <div class="breadcrumb"></div>
+      </div>
+      <div class="siteinfo_container">
+        <div class="siteinfo_contentnav">
+          <ul class="siteinfo_conentlist">
+            <li class="siteinfo_contentitem">
+              <a class="siteinfo_contentlink js-touchhover" href="company">
+                <span class="siteinfo_panel">
+                  <span class="siteinfo_panelinner"> </span>
+                </span>
+                <span class="siteinfo_txt"> COMPANY </span>
+                <span class="siteinfo_txt -sm"> 会社情報 </span>
+              </a>
+            </li>
+            <li class="siteinfo_contentitem">
+              <a class="siteinfo_contentlink js-touchhover" href="services/">
+                <span class="siteinfo_panel">
+                  <span class="siteinfo_panelinner"> </span>
+                </span>
+                <span class="siteinfo_txt"> SERVICES </span>
+                <span class="siteinfo_txt -sm"> サービス </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="siteinfo_other">
         <div class="siteinfo_box">
-            <div class="breadcrumb"></div>
+          <ul class="siteinfo_othernav">
+            <li class="siteinfo_othernavitem">
+              <a class="siteinfo_othernavlink anime-texteffect js-touchhover" href="contact/"> お問い合わせ </a>
+            </li>
+          </ul>
         </div>
-        <div class="siteinfo_container">
-            <div class="siteinfo_contentnav">
-                <ul class="siteinfo_conentlist">
-
-
-                    <li class="siteinfo_contentitem">
-                        <a class="siteinfo_contentlink js-touchhover" href="company/index.html"><span class="siteinfo_panel"><span class="siteinfo_panelinner"></span></span>
-                            <span class="siteinfo_txt">COMPANY</span>
-                            <span class="siteinfo_txt -sm">会社情報</span>
-                        </a>
-                    </li>
-                    <li class="siteinfo_contentitem">
-                        <a class="siteinfo_contentlink js-touchhover" href="services/index.html"><span class="siteinfo_panel"><span class="siteinfo_panelinner"></span></span>
-                            <span class="siteinfo_txt">SERVICES</span>
-                            <span class="siteinfo_txt -sm">サービス</span>
-                        </a>
-                    </li>
-
-
-                </ul>
-            </div>
-        </div>
-        <div class="siteinfo_other">
-            <div class="siteinfo_box">
-                <ul class="siteinfo_othernav">
-                    <li class="siteinfo_othernavitem"><a class="siteinfo_othernavlink anime-texteffect js-touchhover" href="contact/index.html">お問い合わせ</a></li>
-                </ul>
-            </div>
-        </div>
-        <p class="siteinfo_pagetop">
-            <a class="siteinfo_pagetop js-touchhover" href="index.html#pagetop"><svg class="siteinfo_pagetopicon c-icon"><use xlink:href="/assets/img/common/sprite.svg#arrow_right"></use></svg></a>
-        </p>
+      </div>
+      <p class="siteinfo_pagetop">
+        <a class="siteinfo_pagetop js-touchhover" href="#pagetop">
+          <svg class="siteinfo_pagetopicon c-icon">
+            <use xlink:href="assets/img/common/sprite.svg#arrow_right"></use>
+          </svg>
+        </a>
+      </p>
     </div>
     <div data-include="/includes/footer.html"></div>
-
     <!-- lib -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.3.1.min.js"><\/script>')
+      window.jQuery || document.write('<script src="/assets/js/vendor/jquery-3.3.1.min.js"><\/script>');
     </script>
     <script src="assets/js/vendor/svgxuse.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
@@ -518,7 +559,5 @@
     <script src="assets/js/vendor/plugins/PixiPlugin.min.js"></script>
     <script src="assets/js/vendor/pixi-legacy.min.js"></script>
     <script src="assets/js/index.js"></script>
-
-</body>
-
+  </body>
 </html>

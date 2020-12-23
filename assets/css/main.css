@@ -347,25 +347,6 @@ select::-ms-expand {
 .overflow-hidden {
   overflow: hidden !important;
 }
-.m-0 {
-  margin: 0rem;
-}
-.mt-0,
-.my-0 {
-  margin-top: 0rem;
-}
-.mr-0,
-.mx-0 {
-  margin-right: 0rem;
-}
-.mb-0,
-.my-0 {
-  margin-bottom: 0rem;
-}
-.ml-0,
-.mx-0 {
-  margin-left: 0rem;
-}
 .m-1 {
   margin: 6.4rem;
 }
@@ -4666,25 +4647,6 @@ input[type="checkbox"]:checked ~ .p-checkbox_icon::before {
   .base-aside {
     margin-top: 6.85714vw;
   }
-  .m-0 {
-    margin: 0vw;
-  }
-  .mt-0,
-  .my-0 {
-    margin-top: 0vw;
-  }
-  .mr-0,
-  .mx-0 {
-    margin-right: 0vw;
-  }
-  .mb-0,
-  .my-0 {
-    margin-bottom: 0vw;
-  }
-  .ml-0,
-  .mx-0 {
-    margin-left: 0vw;
-  }
   .m-1 {
     margin: 5.14286vw;
   }
@@ -6709,44 +6671,6 @@ input[type="checkbox"]:checked ~ .p-checkbox_icon::before {
   :root {
     font-size: 0.71429vw;
   }
-  .m-0 {
-    margin: 0vw;
-  }
-  .mt-0,
-  .my-0 {
-    margin-top: 0vw;
-  }
-  .mr-0,
-  .mx-0 {
-    margin-right: 0vw;
-  }
-  .mb-0,
-  .my-0 {
-    margin-bottom: 0vw;
-  }
-  .ml-0,
-  .mx-0 {
-    margin-left: 0vw;
-  }
-  .m-1 {
-    margin: 5.14286vw;
-  }
-  .mt-1,
-  .my-1 {
-    margin-top: 5.14286vw;
-  }
-  .mr-1,
-  .mx-1 {
-    margin-right: 5.14286vw;
-  }
-  .mb-1,
-  .my-1 {
-    margin-bottom: 5.14286vw;
-  }
-  .ml-1,
-  .mx-1 {
-    margin-left: 5.14286vw;
-  }
   .p-0 {
     padding: 0vw;
   }
@@ -7033,44 +6957,6 @@ input[type="checkbox"]:checked ~ .p-checkbox_icon::before {
   }
   .base-aside {
     margin-top: 96px;
-  }
-  .m-0 {
-    margin: 0rem;
-  }
-  .mt-0,
-  .my-0 {
-    margin-top: 0rem;
-  }
-  .mr-0,
-  .mx-0 {
-    margin-right: 0rem;
-  }
-  .mb-0,
-  .my-0 {
-    margin-bottom: 0rem;
-  }
-  .ml-0,
-  .mx-0 {
-    margin-left: 0rem;
-  }
-  .m-1 {
-    margin: 7.2rem;
-  }
-  .mt-1,
-  .my-1 {
-    margin-top: 7.2rem;
-  }
-  .mr-1,
-  .mx-1 {
-    margin-right: 7.2rem;
-  }
-  .mb-1,
-  .my-1 {
-    margin-bottom: 7.2rem;
-  }
-  .ml-1,
-  .mx-1 {
-    margin-left: 7.2rem;
   }
   .p-0 {
     padding: 0rem;
